@@ -41,7 +41,7 @@ blockquote, q {
     margin:0;
     padding:0;
     max-width: 100%;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 html{
     font-size:62.5%;
@@ -70,63 +70,62 @@ a{
     color:#4f4f4f;
 }
 /* Header section styles */
-nav{
+.myphoto{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    width:50%;
+    padding:1%;
+    margin:5%;
 }
-.logo{
-    width:10%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.link{
-    width:60%;
-}
-#top{
-    height:90vh;
-    display:flex;
- flex-direction:column-reverse;
-}
-.aboutme{
+.aboutme {
     width:50%;
     display:flex;
-   
-    align-items: center;
+    flex-direction: column;
+    align-content: left;
+    justify-content: center;
 }
 .button{
-    width: 50%;
-    display:flex;
-   
-    align-items: center;
-}
-.paragraph{
-    width: 50%;
-    display:flex;
-    
-    align-items: center;
-}
-.myphoto img{
     width:50%;
-    height:50vh;
-    display:flex;
+    justify-self:center;
 
 }
-.gallery1{
-    box-sizing:border-box;
-  padding:0;
-  margin:0;
-  max-width:100%;
+.paragraph{
+    width:50%;
 }
-.gallery2{
-    box-sizing:border-box;
-  padding:0;
-  margin:0;
-  max-width:100%;
+#myself{
+    display: flex;
+    align-content: flex-end;
 }
-.gallary1{
-    height:300px;
-    width:100%;
+
+.fourboxes{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box{
+    display:flex;
+    width: 25%;
+    flex-direction: column;
+    align-content: center;
+}
+.fourboxes img{
+    height:100px;
+    width:200px;
+    align-self: center;
+}
+h3{
+    text-align: center;
+}
+.fourboxes p{
+    text-align: center;
+}
+footer{
+    display:flex;
+     justify-content: center;
+     flex-direction: column;
+}
+footer .button{
+    width: 25%;
+    border-radius: 15%;
+    justify-self:center;
+    align-self: center;
 }
