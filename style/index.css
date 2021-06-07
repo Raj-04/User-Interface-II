@@ -68,6 +68,7 @@ section{
 a{
     text-decoration: none;
     color:#4f4f4f;
+    border: 1px solid #4f4f4f;
 }
 /* Header section styles */
 .myphoto{
@@ -85,8 +86,8 @@ a{
 }
 .button{
     width:50%;
-    justify-self:center;
-
+    /* justify-self:center; */
+    padding: 3%;
 }
 .paragraph{
     width:50%;
@@ -128,4 +129,54 @@ footer .button{
     border-radius: 15%;
     justify-self:center;
     align-self: center;
+}
+/* Responsive Styles */
+/* max-width Desktop first */
+@media(max-width: 800px){
+/* if the screen size is 800px or smaller apply these styles */
+/* This styling does not need alot of changes as it looks great with the desktop styling */
+}
+@media(max-width:500px){
+/* if the screen size is 500px or smaller apply these styles */
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%; 
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%; 
+        display: flex;
+        align-items: center;
+    }
+    .link{
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutme, #myself, .button, .paragraph{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+      h1{
+        text-align: center;
+    }
+    .fourboxes{
+        width:100%;
+        flex-wrap: wrap;
+    }
+    .box4{
+        display: none;
+    }
+    .myphoto{
+        width: 100%;
+    }
+    .button{
+        width: 50%;
+    }
 }
